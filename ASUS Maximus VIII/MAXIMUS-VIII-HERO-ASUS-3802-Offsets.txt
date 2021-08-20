@@ -1,0 +1,86 @@
+WWAN | VarStore: Setup, VarOffset: 0x3E8, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+Enable WWAN | VarStore: Setup, VarOffset: 0x4C3, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+C6DRAM | VarStore: Setup, VarOffset: 0x5C0, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+AP threads Idle Manner | VarStore: Setup, VarOffset: 0x5D8, Size: 0x1
+HALT Loop: 0x1
+MWAIT Loop: 0x2 (default)
+RUN Loop: 0x3
+
+Intel RMT State | VarStore: Setup, VarOffset: 0x26, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+Interrupt Redirection Mode Selection | VarStore: Setup, VarOffset: 0x511, Size: 0x1
+Fixed Priority: 0x0
+Round robin: 0x1
+Hash Vector: 0x2
+PAIR with Fixed Priority: 0x4 (default)
+PAIR with Round Robin: 0x5
+PAIR with Hash Vector: 0x6
+No Change: 0x7
+
+Energy Efficient Turbo | VarStore: Setup, VarOffset: 0x673, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+ACPI Sleep State | VarStore: Setup, VarOffset: 0xF0C, Size: 0x2
+Suspend Disabled: 0x0
+S3 (Suspend to RAM): 0x2
+
+Enable RH Prevention | VarStore: Setup, VarOffset: 0x875, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+Power Down Unused Lanes | VarStore: Setup, VarOffset: 0x733, Size: 0x1
+Disabled: 0x0
+Auto: 0x1 (default)
+
+Power Down Unused Lanes | VarStore: Setup, VarOffset: 0x734, Size: 0x1
+Disabled: 0x0
+Auto: 0x1 (default)
+
+Power Down Unused Lanes | VarStore: Setup, VarOffset: 0x735, Size: 0x1
+Disabled: 0x0
+Auto: 0x1 (default)
+
+DDR PowerDown and idle counter | VarStore: Setup, VarOffset: 0x82B, Size: 0x1
+PCODE: 0x0
+BIOS: 0x1 (default)
+
+SelfRefresh Enable | VarStore: Setup, VarOffset: 0x863, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+PCH Cross Throttling | VarStore: Setup, VarOffset: 0xE6B, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+PCI Express Clock Gating | VarStore: Setup, VarOffset: 0x963, Size: 0x1
+Disabled: 0x1
+Enabled: 0x0 (default)
+
+High Precision Timer | VarStore: Setup, VarOffset: 0x8C7, Size: 0x1
+Disabled: 0x0
+Enabled: 0x1 (default)
+
+HDCP Support | VarStore: Setup, VarOffset: 0x711, Size: 0x1
+Enabled: 0x1 (default)
+Disabled: 0x0
+
+BCLK Aware Adaptive Voltage | VarStore: Setup, VarOffset: 0x6A2, Size: 0x1
+Auto: 0x0 (default)
+Enabled: 0x1
+Disabled: 0x2
+
+PCI Delay Optimization | VarStore: Setup, VarOffset: 0x2F, Size: 0x1
+Disabled: 0x0 (default)
+Enabled: 0x1
