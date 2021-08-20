@@ -2,6 +2,39 @@
 
 [![ballout](Optional%20Tweaks/bg2.jpg)]
 
+How do RSS queues behave on different NICs?
+More specifically, what determines the ISR distribution when RSS queues are set to specific cores that are not core0?
+Anyone with a RSS capable NIC feel free to test:
+
+If more than 1 NIC, disable all other NICs that you don't use for internet connection.
+Check RSS with Get-NetAdapterRSS in elevated powershell.
+If Enabled:False set Enable-NetAdapterRss -Name * in elevated Powershell.
+Check again with  Get-NetAdapterRSS.
+If Enabled:True proceed:
+
+Set Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\DisableTaskOffload to 0
+Set Set-NetAdapterRSS -Name * -BaseProcessorNumber 2 in elevated Powershell.
+Get the Windows ADK for your version from https://docs.microsoft.com/de-de/windows-hardware/get-started/adk-install
+Only Windows Performance Analyzer has to be ticked.
+Install to default location.
+Create folder C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files
+Reboot.
+Run timecard's script in elevated Powershell (copy paste to txt file and rename to .ps1, then right click Run in Powershell):
+$date = date
+Start-Sleep -s 5
+xperf -on Latency -stackwalk profile -BufferSize 1024
+write-host "Started"
+Start-Sleep -s 30
+xperf -d "C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files\trace.etl"
+xperf -i "C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files\trace.etl" -o "C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files\$($date.ToString("yyyyMMdd-hhmm")).txt" -a dpcisr
+Get-NetAdapterRSS | Out-File -FilePath "C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files\$($date.ToString("yyyyMMdd-hhmm")).txt" -Append -encoding ASCII
+Use your internet in any way while the script runs (~30 seconds)
+Go to C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\files
+Upload the .txt file here or pm me.
+
+
+
+
 # Disable Cortana, Telemetry & Windows Updates
  * Run "disable cortana" via NSudo (everytime you use NSudo, check the box "Enable All Privileges")
  * Run script "disable windows updates" via NSudo
@@ -20,8 +53,6 @@
  * Type: netsh interface ipv4 set subinterface “Ethernet” mtu=1492 store=persistent
  * Replace "Ethernet" with your adapter name & my MTU value with yours
  * Recheck after that with : netsh interface ipv4 show subinterface
-
-
 
 # Disable Nagle-Algorithm
 Nagle's algorithm is a means of improving the efficiency of TCP/IP networks by reducing the number of packets that need to be sent over the network. This will reduce your online gaming latency significantly by increasing the frequency of TCP acknowledgements sent to the game server.
@@ -115,3 +146,5 @@ Disable all power saving options in drivers and for the adapter, more options ar
 
 Ensure Network Throttling Index feature is enabled
 Recommendation: Set a value between 10 and 20 decimal, e.g. 15mbps-30mbps HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\NetworkThrottlingIndex
+
+

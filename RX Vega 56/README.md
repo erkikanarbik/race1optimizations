@@ -2,10 +2,10 @@
 
 
 [NVIDIA OC Guide](https://docs.google.com/document/d/14ma-_Os3rNzio85yBemD-YSpF_1z75mZJz1UdzmW8GE/edit)
+[Hidden Benefits of High Refresh Rate G-SYNC](https://blurbusters.com/gsync/gsync101-input-lag-tests-and-settings/14/)
+[Vega 64 BIOS](RX VEGA 56/Vega 10.rom) 
 
-Vega 64 BIOS 
-
-## [Driver Mod] NimeZ Radeon Software 21.8.1
+## [Driver Mod NimeZ Radeon Software 21.8.1](https://forums.guru3d.com/threads/driver-mod-nimez-radeon-software-21-8-1-whql-gcn-legacy-pack-released.436611/)
 [Adrenalin 21.8.1](https://drive.google.com/file/d/1LmoinR4BmsBRxpdIuHak0FOROlyn2m3P/view?usp=sharing)
 [Dependency](https://drive.google.com/drive/folders/10BhtXSQ3LevRtBOOSONh0h0oahzK0RVO?usp=sharing)
 # Features
@@ -27,6 +27,18 @@ Vega 64 BIOS
  * Run the NZSetup as Administrator
  * Follow the installation guide
  * The setup will ask you to place the Adrenalin UI Installer on Dependencies folder called ccc2_Install.exe
+
+# Settings
+ * Anti-Aliasing - Use application settings 
+ * Anti-Aliasing Method - Multisampling 
+ * Morphological Anti-Aliasing - Disabled 
+ * Anisotropic Filtering - Disabled
+ * Texture Filtering Quality - Performance 
+ * Surface Format Optimization - Enabled
+ * Tessellation Mode - Override application settings
+ * Maximum Tessellation Level - Off 
+ * OpenGL Triple Buffering - Disabled 
+
 
 # Undervolt Overclock profile (also attached)
 GPU_P0=852 MHz; 800mV
