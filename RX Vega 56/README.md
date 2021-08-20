@@ -1,5 +1,8 @@
 ### Vega 56 optimizations
 
+
+[NVIDIA OC Guide](https://docs.google.com/document/d/14ma-_Os3rNzio85yBemD-YSpF_1z75mZJz1UdzmW8GE/edit)
+
 Vega 64 BIOS 
 
 ## [Driver Mod] NimeZ Radeon Software 21.8.1
