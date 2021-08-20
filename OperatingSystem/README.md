@@ -19,3 +19,11 @@ Type “Systempropertiesadvanced” in the search bar if you have 1709, then go 
 Tick the “Automatically set” if you want it enabled.
 Untick “Automatically set” and select your drive, then “no paging file” and “set”, apply and restart.
 Overclocking your Cpu and Gpu on Desktop, and undervolting them on laptop (Plenty of guides out there, i don’t need to detail this, and if you really need help there is an Overclock channel!).
+
+# Audio Recommendation
+ * Disabled Audio/Signal Enhancements
+ * Enable Exclusive Mode
+ * Increase Windows volume (Speakers and System Sounds) to 100% and decrease volume ingame or applications
+ * Disable the Sound Communications Option which automatically reduces sound in some circumstances.
+ * Control Panel > Hardware and Sound > Sound > Communications > Set to Do Nothing
+ * Set Output to Headphones instead of Speakers (may require driver)

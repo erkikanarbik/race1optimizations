@@ -6,6 +6,13 @@
 ## Useful tools
 [1. Activate OS](https://github.com/kkkgo/KMS_VL_ALL)
 
+[2. GPU-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/)
+
+[3. Text Editing Done Right](https://www.sublimetext.com/)
+
+[4. QuickCPU](https://coderbag.com/product/quickcpu)
+
+[5. Visual C++ Redistributable Runtimes](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 
 
 Enable MSI mode for drivers
