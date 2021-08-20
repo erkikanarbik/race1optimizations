@@ -1,0 +1,70 @@
+﻿<AMDMemoryTweakXL>
+  <Timings>
+    <timing1 cl="16" ras="30" rcdrd="14" rcdwr="9" />
+    <timing2 rcab="44" rcpb="43" rpab="14" rppb="14" />
+    <timing3 rrds="4" rrdl="6" rtp="4" />
+    <timing4 faw="14" />
+    <timing5 cwl="7" wtrs="4" wtrl="9" />
+    <timing6 wr="14" />
+    <timing7 rrefd="8" />
+    <timing8 rdrddd="3" rdrdsd="2" rdrdsc="1" rdrdscl="3" />
+    <timing9 wrwrdd="3" wrwrsd="2" wrwrsc="1" wrwrscl="3" />
+    <timing10 wrrd="1" rdwr="19" />
+    <timing12 ref="25000" />
+    <timing13 mrd="8" mod="15" />
+    <timing14 xs="270" />
+    <timing16 xsmrs="8" />
+    <timing17 pd="8" cksre="10" cksrx="10" />
+    <timing20 rfcpb="142" stag="7" />
+    <timing21 xp="8" cpded="2" cke="8" />
+    <timing22 rddata="19" wrlat="5" rdlat="14" wrdata="1" />
+    <timing23 ckestag="2" />
+    <RFCTiming rfc="246" />
+  </Timings>
+  <ADL timing="0" zerorpm="False" tdplimit="0" maxtemp="85">
+    <mem>
+      <p0 enabled="1" clock="167" vddc="800" />
+      <p1 enabled="1" clock="500" vddc="800" />
+      <p2 enabled="1" clock="800" vddc="950" />
+      <p3 enabled="1" clock="975" vddc="1000" />
+    </mem>
+    <core>
+      <p0 enabled="1" clock="852" vddc="800" />
+      <p1 enabled="1" clock="991" vddc="850" />
+      <p2 enabled="1" clock="1084" vddc="900" />
+      <p3 enabled="1" clock="1138" vddc="920" />
+      <p4 enabled="1" clock="1250" vddc="950" />
+      <p5 enabled="1" clock="1450" vddc="980" />
+      <p6 enabled="1" clock="1590" vddc="1030" />
+      <p7 enabled="1" clock="1660" vddc="1070" />
+    </core>
+    <fan>
+      <p0 temp="30" fan="11" />
+      <p1 temp="50" fan="12" />
+      <p2 temp="63" fan="36" />
+      <p3 temp="68" fan="50" />
+      <p4 temp="75" fan="73" />
+    </fan>
+  </ADL>
+  <PowerPlay>
+    <powerplay maxcore="2400" maxmem="1500" powlimit="50" voltoffset="8" />
+    <powertune socket="220" battery="220" small="220" edc="0" tdc="300" templimit="85" shutdown="91" hotspot="105" liquid1="74" liquid2="74" hbm="95" soc="115" vrmem="115" plx="100" />
+    <fan target="75" acoustic="2400" sensit="4836" throt="2400" minpwm="10" gfxtar="852" tempfan="4" hotspotctrl="4" liquidctrl="4" vddcctrl="4" mvddctrl="4" plxctrl="4" hbmctrl="4" fanstop="0" fanstart="0" fanmin="400" fanmax="4900" />
+    <mempp>
+      <p0 clock="167" vddc="800" />
+      <p1 clock="500" vddc="900" />
+      <p2 clock="800" vddc="950" />
+      <p3 clock="945" vddc="1000" />
+    </mempp>
+    <corepp>
+      <p0 clock="852" vddc="800" />
+      <p1 clock="991" vddc="900" />
+      <p2 clock="1084" vddc="950" />
+      <p3 clock="1138" vddc="1000" />
+      <p4 clock="1200" vddc="1050" />
+      <p5 clock="1401" vddc="1100" />
+      <p6 clock="1536" vddc="1150" />
+      <p7 clock="1630" vddc="1200" />
+    </corepp>
+  </PowerPlay>
+</AMDMemoryTweakXL>
