@@ -30,6 +30,53 @@ Windows 1809+ has a synthetic TSC timer of 10mhz there is no work around current
  * bcdedit /set useplatformclock yes
  * & Enable HPET in bios
 
+BCDEdit
+To configure Boot Configuration Data (BCD), run Command Prompt (cmd) as admin and paste each command:
+
+bcdedit /set disabledynamictick yes
+Forces the timer to be active all the time instead of stopping it to save power (Windows 8+)
+
+bcdedit /set useplatformtick yes
+Disables Synthetic Timers and allows an even timer of 0.5ms (Windows 8+)
+
+bcdedit /set tscsyncpolicy enhanced
+Enhanced Timestamp Counter Sync Policy (Windows 8+)
+
+bcdedit /set tpmbootentropy ForceDisable
+Disables the Trusted Platform Module
+
+bcdedit /set hypervisorlaunchtype off
+Disables Hyper Virtualization
+
+bcdedit /set quietboot yes
+Disables Windows logo on startup (Windows 8+)
+
+bcdedit /timeout 0
+Sets the boot timeout to 0, use 5 for dual boot so you have time to choose between the Operating Systems
+
+bcdedit /set allowedinmemorysettings 0x0
+Disables Memory Mitigations (Windows 8+)
+
+bcdedit /set isolatedcontext No
+Disables Memory Mitigations (Windows 8+)
+
+bcdedit /set nx alwaysoff
+Disables DEP, if Valorant / Mayhem breaks, use bcdedit /set nx optin instead
+
+bcdedit /set bootux disabled
+Disables the boot screen animation (Windows 8.1+)
+
+bcdedit /set bootmenupolicy legacy
+Allows for a Windows 7-like boot menu (Windows 8+)
+
+A few extra ones to try out, credit to Riot for these:
+bcdedit /set tscsyncpolicy legacy
+bcdedit /set uselegacyapicmode yes
+bcdedit /set x2apicpolicy disable
+
+To revert a BCDEdit command, do bcdedit /deletevalue (for example bcdedit /deletevalue tscsyncpolicy)
+
+
 
 
 
