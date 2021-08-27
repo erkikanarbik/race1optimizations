@@ -1,0 +1,31 @@
+iVCam
+NordVPN
+Driver Booster Portable
+IOBit Uninstaller Pro
+Office365
+Microsoft Teams
+Chrome
+Park Control
+Proccess Lasso
+Sublime Text
+Webstorm
+Git
+Discord
+Steelseries
+StartIsBack
+
+
+Steam - +mat_queue_mode 2 +r_dynamic 0 +rate 786432 -tickrate 128 +viewmodel_recoil 0 +fps_max 300 -console -novid -nojoy +exec autoexec.cfg
+
+Streamlabs OBS
+CRU
+ISLC
+RDR2 Save
+Autoruns
+Blackbird
+7-Zip
+Adobe Photoshop
+uTorrent
+Microsoft Office
+Teams
+PotPlayer
