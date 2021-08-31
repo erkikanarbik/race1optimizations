@@ -1,0 +1,25 @@
+﻿<values cl="16" ras="30" rcdrd="14" rcdwr="9" rcab="44" rcpb="43" rpab="14" rppb="14" rrds="3" rrdl="4" rtp="4" faw="14" cwl="7" wtrs="4" wtrl="9" wr="14" rrefd="8" rdrddd="3" rdrdsd="2" rdrdsc="1" rdrdscl="3" wrwrdd="3" wrwrsd="2" wrwrsc="1" wrwrscl="3" wrrd="1" rdwr="19" ref="25000" mrd="8" mod="15" xs="270" xsmrs="8" pd="8" cksre="10" cksrx="10" rfcpb="160" stag="7" xp="8" cpded="2" cke="8" rddata="19" wrlat="5" rdlat="14" wrdata="1" ckestag="2" rfc="246" timing="1" zerorpm="False" tdplimit="50" maxtemp="85">
+  <mem>
+    <p0 enabled="1" clock="167" vddc="800" />
+    <p1 enabled="1" clock="500" vddc="800" />
+    <p2 enabled="1" clock="800" vddc="950" />
+    <p3 enabled="1" clock="1100" vddc="950" />
+  </mem>
+  <core>
+    <p0 enabled="1" clock="852" vddc="800" />
+    <p1 enabled="1" clock="991" vddc="900" />
+    <p2 enabled="1" clock="1084" vddc="925" />
+    <p3 enabled="1" clock="1269" vddc="952" />
+    <p4 enabled="1" clock="1312" vddc="956" />
+    <p5 enabled="1" clock="1474" vddc="962" />
+    <p6 enabled="1" clock="1602" vddc="981" />
+    <p7 enabled="1" clock="1630" vddc="1000" />
+  </core>
+  <fan>
+    <p0 temp="30" fan="12" />
+    <p1 temp="46" fan="45" />
+    <p2 temp="55" fan="50" />
+    <p3 temp="60" fan="58" />
+    <p4 temp="65" fan="69" />
+  </fan>
+</values>

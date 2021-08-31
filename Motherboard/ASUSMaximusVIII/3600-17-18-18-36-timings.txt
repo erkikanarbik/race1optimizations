@@ -1,0 +1,23 @@
+3600MHz	
+Memory Timings	
+CAS Latency (CL)	17T
+RAS To CAS Delay (tRCD)	18T
+RAS Precharge (tRP)	18T
+RAS Active Time (tRAS)	36T
+Row Refresh Cycle Time (tRFC)	535T
+Command Rate (CR)	2T
+RAS To RAS Delay (tRRD)	Same Bank Group: 8T, Diff. Bank Group: 6T
+Write Recovery Time (tWR)	21T
+Read To Read Delay (tRTR)	Different Rank: 6T, Different DIMM: 7T, Same Bank Group: 7T, Diff. Bank Group: 4T
+Read To Write Delay (tRTW)	Different Rank: 12T, Different DIMM: 12T, Same Bank Group: 12T, Diff. Bank Group: 12T
+Write To Read Delay (tWTR)	Different Rank: 7T, Different DIMM: 7T, Same Bank Group: 34T, Diff. Bank Group: 28T
+Write To Write Delay (tWTW)	Different Rank: 9T, Different DIMM: 9T, Same Bank Group: 7T, Diff. Bank Group: 4T
+Read To Precharge Delay (tRTP)	10T
+Write To Precharge Delay (tWTP)	41T
+Four Activate Window Delay (tFAW)	33T
+Write CAS Latency (tWCL)	16T
+CKE Min. Pulse Width (tCKE)	5T
+Refresh Period (tREF)	11440T
+Round Trip Latency (tRTL)	DIMM1: 69T, DIMM3: 69T
+I/O Latency (tIOL)	DIMM1: 4T, DIMM3: 4T
+Burst Length (BL)	8
